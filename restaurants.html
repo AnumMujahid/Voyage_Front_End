@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <!-- Animate CSS -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <!-- Owl CSS -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Magnific Popup Js -->
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <!-- Owl js -->
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <style>
+        @media screen and (min-width: 990px) {
+            .sticky {
+                position: sticky;
+                top: 95px;
+                left: 0px;
+            }
+
+            .sidenav {
+                color: white;
+                background-color: #f3752b;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation starts -->
+    <nav class="navbar navbar-fixed-top" style="background-color: #f52f57;">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Responsive button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="" class="nav-logo">Voyage</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navi">
+                <!-- Navigation menus -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Explore <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #f52f57;">
+                            <li><a href="mustsee.html">Must See Sites</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="hotels.html">Hotels</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="shops.html">Shops</a></li>
+                            <li><a href="transports.html">Transport</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="howtouse.html">Usage</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="saved.html" class="location">Wish List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- list of restaurants -->
+    <br><br><br><br>
+    <section>
+        <div class="row">
+            <div class="col-md-3 col-xs-12 sticky" style="padding-left: 0; padding-right: 0;">
+                <div class="sidenav">
+                    <form action="#">
+                        <div class="search">
+                            <input type="text" class="search-bar">
+                            <a href="#" class="search-btn">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <p class="filter-data"><strong>Time To Travel</strong></p>
+                        <div class="slidercontainer">
+                            <label for="time" class="filter-data">Time between 1 to 180
+                                minutes:</label>
+                            <input type="range" id="time" name="time" min="0" max="180" class="rangeslider">
+                        </div>
+                        <br>
+                        <p class="filter-data"><strong>Review</strong></p>
+
+                        <label for="superb" class="filter-data out"> Superb (9+)
+                            <input type="checkbox" id="superb" name="superb" value="superb">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="vgood" class="filter-data out"> Very Good (8+)
+                            <input type="checkbox" id="vgood" name="vgood" value="vgood">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="good" class="filter-data out"> Good (7+)
+                            <input type="checkbox" id="good" name="good" value="good">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="pleasant" class="filter-data out"> Pleasant (6+)
+                            <input type="checkbox" id="pleasant" name="pleasant" value="pleasant">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="no" class="filter-data out"> No Rating (0)
+                            <input type="checkbox" id="no" name="no" value="no">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+                        <p class="filter-data"><strong>Type</strong></p>
+
+                        <label for="local" class="filter-data out"> Local Food
+                            <input type="checkbox" id="local" name="local" value="local">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="international" class="filter-data out"> International
+                            <input type="checkbox" id="international" name="international" value="international">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="fast" class="filter-data out"> Fast Food
+                            <input type="checkbox" id="fast" name="fast" value="fast">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <input type="submit" value="Search" class="btn btn-sm btn-filter">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-1"></div>
+            <div class="col-md-7 col-xs-10" style="padding-right: 0;">
+                <div class="main">
+                    <div class="latest-news-area" id="latest">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                                <div class="section-title text-center">
+
+                                    <h2>
+                                        <b>RESTAURANTS</b>
+                                    </h2>
+                                    <div class="sub-heading">
+                                        <p>Some of the restaurants in the region <br>are listed below</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="news-active">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                                class="image-responsive">
+                                            <div class="bookmark date">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><br></a><i
+                                                    class="fa fa-star">
+                                                    7.5</i>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <p>From $30<br><strong>KING FOOD</strong><br>Fast Food</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor.</p>
+                                            <br>
+                                            <a href="restaurantsdetail.html">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="https://images.pexels.com/photos/1064136/pexels-photo-1064136.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                                class="image-responsive">
+                                            <div class="bookmark date">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><br></a><i
+                                                    class="fa fa-star">
+                                                    7.5</i>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <p>From $30<br><strong>KING FOOD</strong><br>Fast Food</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor.</p>
+                                            <br>
+                                            <a href="restaurantsdetail.html">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="news-active">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="https://images.pexels.com/photos/2276797/pexels-photo-2276797.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                                class="image-responsive">
+                                            <div class="bookmark date">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><br></a><i
+                                                    class="fa fa-star">
+                                                    7.5</i>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <p>From $30<br><strong>KING FOOD</strong><br>Fast Food</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor.</p>
+                                            <br>
+                                            <a href="restaurantsdetail.html">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="https://images.pexels.com/photos/2291603/pexels-photo-2291603.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                                class="image-responsive">
+                                            <div class="bookmark date">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><br></a><i
+                                                    class="fa fa-star">
+                                                    7.5</i>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <p>From $30<br><strong>KING FOOD</strong><br>Fast Food</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor.</p>
+                                            <br>
+                                            <a href="restaurantsdetail.html">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-1"></div>
+        </div>
+    </section>
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="social-icon">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-pinterest"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-youtube-square"></i></a>
+                    </div><br>
+                    <div class="copyright">
+                        <p class="footer-text">
+                            <img src="img/logo.png" class="footer-logo">VOYAGE &copy;
+                        </p>
+                        <div class="bordernow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.ripples-min.js" type="text/javascript"></script>
+    <script src="js/typed.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/smoothscroll.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+</body>
+
+</html>

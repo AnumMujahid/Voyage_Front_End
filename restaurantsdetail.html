@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <!-- Animate CSS -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <!-- Owl CSS -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Magnific Popup Js -->
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <!-- Owl js -->
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <!-- navigation starts -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Responsive button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="" class="nav-logo">Voyage</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navi">
+                <!-- Navigation menus -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Explore <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #f52f57;">
+                            <li><a href="mustsee.html">Must See Sites</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="hotels.html">Hotels</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="shops.html">Shops</a></li>
+                            <li><a href="transports.html">Transport</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="howtouse.html">Usage</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="saved.html" class="location">Wish List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- slider section -->
+    <section class="slider text-center restaurant-img" id="slider">
+        <div class="slider-overlay">
+            <div class="slider-content">
+                <br>
+                <div class="restaurant-name"></div>
+                <div class="cta-div">
+                    <a href="#contact_area" class="btn1">CONTACT</a>
+                    <a href="#map" class="btn2">EXPLORE</a>
+                </div>
+                <br>
+                <br>
+                <div class="social-networks">
+                    <a href="" class="fa fa-bookmark-o"></a>
+                    <a href="#works" class="fa fa-compass"></a>
+                    <a href="#map" class="fa fa-picture-o"></a>
+                    <a href="" class="fa fa-video-camera"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services section -->
+    <section class="service-area" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <h3>Opening</h3>
+                        <p><strong>Monday-Friday: </strong>10:00AM / 11:00AM<br><strong>Closed: </strong>Saturday-Sunday
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-address-book-o"></i>
+                        </div>
+                        <h3>Contact Info</h3>
+                        <p><strong>Phone: </strong>+92 324 7238197<br><strong>Website: </strong><a
+                                href="#">www.google.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p><strong>Location: </strong>68 Abc Block, I-13, Lhr, Pk<br><strong>Directions:
+                            </strong><a href="#">View on Google Map</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Cost Info</h3>
+                        <p><strong>Price: </strong>$30.99<br><strong>Rating: </strong>7.5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+    <!-- FAQs section -->
+    <section class="faq detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel-group" id="accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a href="#collapseOne" data-toggle="collapse" data-parent="#accordian">General
+                                        Info</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi id cumque quod
+                                        obcaecati optio nam modi ad mollitia vero aspernatur consectetur dignissimos
+                                        expedita doloremque placeat pariatur sint soluta assumenda laudantium enim
+                                        voluptate dolor labore, quibusdam ullam! Quia praesentium autem ipsa pariatur
+                                        vel error non quis adipisci facere sit, quod similique eligendi et obcaecati
+                                        voluptatum harum tempore alias est velit.</p>
+                                    <p>rovident recusandae reiciendis
+                                        laudantium hic atque! Reprehenderit nesciunt dolor eligendi aut sit voluptatibus
+                                        magnam amet sint veniam soluta dolores minus cumque, odit id necessitatibus
+                                        explicabo iusto. Quam totam enim vel error, vero rerum possimus quae
+                                        consequuntur blanditiis, saepe ullam. Quo, sequi!</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-5 col-md-4">
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5 col-md-4">
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                                <li>Lorem ipsum dolor sit</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a href="#collapseTwo" class="collapsed" data-toggle="collapse"
+                                        data-parent="#accordian">Starters</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a href="#collapseThree" class="collapsed" data-toggle="collapse"
+                                        data-parent="#accordian">Main Course</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-md-2">
+                                                    <img
+                                                        src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                                </div>
+                                                <div class="col-sm-9 col-md-10">
+                                                    <h4><strong>Fresh Crab with Lemon - $9.9 </strong></h4>
+                                                    <h5>Crab / Lemon / Garlic</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- works section -->
+    <br><br>
+    <section class="work" id="works">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/853006/pexels-photo-853006.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/853006/pexels-photo-853006.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/3662103/pexels-photo-3662103.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/3662103/pexels-photo-3662103.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="https://images.pexels.com/photos/4078059/pexels-photo-4078059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            title="King Food">
+                            <img src="https://images.pexels.com/photos/4078059/pexels-photo-4078059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-responsive" alt="Oops Image got lost...&#x1F61E;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form section -->
+    <section class="contact-area" id="contact_area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <div class="section-heading">
+                        <h2 class="section-title"><b>LEAVE A MESSAGE</b></h2>
+                        <div class="border-bottom-now"></div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="contact-form" id="contactform">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" id="fname" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-12">
+                                <br>
+                                <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+                                <br>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-12">
+                                <br>
+                                <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-12">
+                                <br>
+                                <input type="text" id="subject" placeholder="Subject" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                <br>
+                                <textarea id="message" class="form-control" rows="4" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <br><br>
+                                <button type="submit" class="btn">Submit Message</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map section -->
+    <br><br>
+    <section class="maps" id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26571.810492202312!2d72.97478140390056!3d33.64481814286933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967597b28689%3A0x6a25bc284293618!2sH-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1578570082336!5m2!1sen!2s"
+            width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="social-icon">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-pinterest"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-youtube-square"></i></a>
+                    </div><br>
+                    <div class="copyright">
+                        <p class="footer-text">
+                            <img src="img/logo.png" class="footer-logo">VOYAGE &copy;
+                        </p>
+                        <div class="bordernow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.ripples-min.js" type="text/javascript"></script>
+    <script src="js/typed.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/smoothscroll.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+</body>
+
+</html>
